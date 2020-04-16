@@ -1,0 +1,24 @@
+class Z
+class A(B b){
+    int funz1() 20;
+    int funz2(int a) let int x = 1; in funz1();
+};
+let
+    A a = new A(new Z());
+
+in
+    a.funz2();
+
+//30
+/*class A(){
+    int getX() let int x = 45; in getY(x);
+    int getY(int x) x;
+};
+
+
+let
+    A a = new A();
+    int somma() let int x=1; in diff(x);
+    int diff(int x) x;
+in
+    a.getX() + somma();*/

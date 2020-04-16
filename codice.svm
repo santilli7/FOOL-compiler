@@ -1,0 +1,112 @@
+push 0
+push classB
+new
+push 0
+push classA
+new
+lfp
+push 1
+push -1
+lfp
+add
+lw
+copy
+lw
+push 1
+add
+loadc
+js
+lfp
+push -2
+lfp
+add
+lw
+copy
+lw
+push 0
+add
+loadc
+js
+add
+print
+halt
+
+function0:
+cfp
+lra
+push 20
+srv
+sra
+pop
+sfp
+lrv
+lra
+js
+
+function1:
+cfp
+lra
+push 1
+lfp
+push 0
+lfp
+add
+lw
+copy
+lw
+push 0
+add
+loadc
+js
+srv
+pop
+sra
+pop
+pop
+sfp
+lrv
+lra
+js
+
+function2:
+cfp
+lra
+push 10
+srv
+sra
+pop
+sfp
+lrv
+lra
+js
+
+function3:
+cfp
+lra
+lfp
+push 1
+push 0
+lfp
+add
+lw
+copy
+lw
+push 1
+add
+loadc
+js
+srv
+sra
+pop
+sfp
+lrv
+lra
+js
+
+classA:
+function0
+function1
+classB:
+function2
+function1
+function3

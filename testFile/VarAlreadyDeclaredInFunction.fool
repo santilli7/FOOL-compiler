@@ -1,0 +1,10 @@
+let
+    int paperino = 3;
+    int pippo(int pluto)
+        let
+            int pluto  = pluto;
+        in
+            pluto;
+in
+    pippo(paperino);
+//Variabile 'pluto' già dichiarata!

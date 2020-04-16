@@ -1,0 +1,9 @@
+class A
+class B ;
+
+let
+    A a = new B();
+in
+    1;
+
+//Valore incompatibile per la variabile a
