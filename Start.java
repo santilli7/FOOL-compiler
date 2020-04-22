@@ -22,7 +22,7 @@ public class Start {
 
     public static void main(String[] args) {
         try {
-            String fileName = "src/main.fool";
+            String fileName = "main.fool";
             CharStream input = CharStreams.fromFileName(fileName);
 
             //LEXER
@@ -57,12 +57,12 @@ public class Start {
             code += "\n" + DispatchTable.generaCodiceDispatchTable();
 
             //scrittura su file
-            File svmFile = new File("./src/codice.svm");
+            File svmFile = new File("./codice.svm");
             BufferedWriter svmWriter = new BufferedWriter(new FileWriter(svmFile.getAbsoluteFile()));
             svmWriter.write(code);
             svmWriter.close();
             if (!type.toPrint().toUpperCase().equals("VOID")) addPrintCodeGen();
-            CharStream inputASM = CharStreams.fromFileName("./src/codice.svm");
+            CharStream inputASM = CharStreams.fromFileName("./codice.svm");
             SVMLexer lexerASM = new SVMLexer(inputASM);
             CommonTokenStream tokensASM = new CommonTokenStream(lexerASM);
             SVMParser parserASM = new SVMParser(tokensASM);
@@ -94,7 +94,7 @@ public class Start {
 
     public static void addPrintCodeGen() {
         try {
-            File f1 = new File("./src/codice.svm");
+            File f1 = new File("./codice.svm");
             FileReader fr = new FileReader(f1);
             BufferedReader br = new BufferedReader(fr);
             String line;

@@ -1,0 +1,6 @@
+let
+    int x = null;
+in
+    x;
+
+//Valore incompatibile per la variabile x

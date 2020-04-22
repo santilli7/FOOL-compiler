@@ -1,0 +1,15 @@
+class A {
+    int f(int x) x;
+}
+class B extends A
+class C extends B {
+    bool f(bool x) x;
+};
+
+let
+    bool val = false;
+    C c = new C();
+in
+    c.f(val);
+
+//L'override del 'f' nella classe 'C' non è permesso!

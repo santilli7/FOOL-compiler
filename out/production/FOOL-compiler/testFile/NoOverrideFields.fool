@@ -1,0 +1,7 @@
+class A(int px)
+class B extends A(bool px);
+
+in
+    1;
+
+//Non è permesso l'override del campo 'px' definito nella superclasse!
